@@ -1,6 +1,13 @@
 @import url(./normalize.css);
 @import url(./reset.css);
 
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+/* 기본 스타일 */
+
 body {
     /* background-color: rgb(88, 88, 88); */
     background: rgb(128, 128, 128);
@@ -11,7 +18,6 @@ body {
 
 .header, .visual, .main, .slogan, .footer-inner {
     width: 940px;
-    box-sizing: border-box;
     margin: 0 auto;
     /* margin: 0 0 0 auto;  = float: right */
 }
@@ -32,8 +38,45 @@ body {
 /* 비주얼 */
 .main{
     background: rgb(133, 133, 133);
-    height: 50vh;
+    /* height: 50vh; */
+    border: 3px solid purple;
+    display: flow-root;
 }
+
+/* .main::before{
+    content: "first child";
+    background: aliceblue;
+    color: red;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+.main::after{
+    content: "last child";
+    background: aliceblue;
+    color: red;
+    font-weight: bolder;
+    text-transform: capitalize;
+} */
+/* CSS 가상요소 예시 */
+
+.group1{
+    background-color: antiquewhite;
+    width: 250px;
+    float: left;
+}
+.group2{
+    /* background-color: blanchedalmond; */
+    background-color: tomato;
+    color: blanchedalmond;
+    width: 380px;
+    float: left;
+}
+.group3{
+    background-color: bisque;
+    width: 190px;
+    float: left;
+}
+
 /* 메인 */
 .slogan{
     background: rgb(66, 66, 66);
