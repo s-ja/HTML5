@@ -9,20 +9,44 @@ body {
     font-weight: 100;
 }
 
-.header{
-    background: rgb(195, 195, 195);
+.header, .visual, .main, .slogan, .footer-inner {
+    width: 940px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    /* margin: 0 0 0 auto;  = float: right */
 }
+/* 레이아웃 */
+
+/* 본문스타일 */
+.header{
+    background: rgb(255, 255, 255);
+    height: 15vh;
+    /* vh : 뷰포트 하이트(%) */
+    padding: 0 30px;
+}
+/* 헤더 */
 .visual{
     background: rgb(177, 177, 177);
+    height: 10vh;
 }
+/* 비주얼 */
 .main{
     background: rgb(133, 133, 133);
+    height: 50vh;
 }
+/* 메인 */
 .slogan{
     background: rgb(66, 66, 66);
     color: rgb(218, 0, 0);
+    height: 10vh;
 }
+/* 슬로건 */
 .footer{
-    background: rgb(23, 23, 23);
-    color: red;
+    background: black;
+    color: whitesmoke;
 }
+.footer-inner{
+    height: 15vh;
+    background: darkred;
+}
+/* 푸터 */
