@@ -39,7 +39,9 @@ body {
 .main{
     background: rgb(133, 133, 133);
     /* border: 3px solid rgb(174, 0, 0); */
-    height: 50vh;
+
+    /* height: 50vh; */
+    min-height: 450px;
 
     /* display: flow-root; */
     /* overflow: hidden; */
@@ -49,10 +51,14 @@ body {
     /* float: left; */
 
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    
+    /* flex-direction: row;
+    flex-wrap: nowrap; */
+    flex-flow: row nowrap;
 
-    /* padding: 0 15px; */
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
 }
 
 .clearfix{
@@ -88,6 +94,7 @@ body {
 
 /* .group{
     margin: 0 15px;
+
     float: left;
 } */
 
@@ -100,7 +107,7 @@ body {
 }
 .group2{
     /* background-color: blanchedalmond; */
-    background-color: tomato;
+    background-color: rgb(121, 0, 0);
     color: blanchedalmond;
     width: 380px;
     /* float: left; */
@@ -109,6 +116,7 @@ body {
 .group3{
     background-color: bisque;
     width: 190px;
+    /* flex-grow: 1; */
     /* float: left; */
     /* height: 100px; */
     /* margin-left: 30px; */
