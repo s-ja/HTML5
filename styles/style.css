@@ -3,10 +3,20 @@
 
 *,
 *::after,
-*::before {
+*::before{
     box-sizing: border-box;
 }
+
+/* *{
+    box-sizing: border-box;
+} */
+/* color : red -> 상속가능 */
+/* box-sizing : border-box -> 상속불가능 */
+
 /* 기본 스타일 */
+a{
+    color: inherit;
+}
 
 body {
     /* background-color: rgb(88, 88, 88); */
@@ -29,7 +39,22 @@ body {
     height: 15vh;
     /* vh : 뷰포트 하이트(%) */
     padding: 0 30px;
+    border-radius:  0 0 15px 15px;
 }
+
+.member {
+    color: aliceblue;
+    background-color: darkred;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+}
+/* :before / ::before -> first child */
+/* :after / ::after -> last child */
+.member li::before {
+    content: ":";
+}
+
 /* 헤더 */
 .visual{
     background: rgb(177, 177, 177);
