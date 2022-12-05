@@ -51,9 +51,27 @@ body {
 }
 /* :before / ::before -> first child */
 /* :after / ::after -> last child */
+
+/* 10점 + 1점 + 1점 */
 .member li::before {
     content: ":";
 }
+
+/* 우선 순위 규칙 */
+/* li (type selectoe) = 1점 */
+/* .first (class selectoe) = 10점 */
+/* #item (id selectoe) = 100점 */
+
+/* 1점+10점+1점 */
+li.first::before {
+    /* content: "" !important; */
+    /* !important = 구체성, 명료성 무효화 */
+    content: "";
+}
+/* 10점 + 10점 + 1점 */
+/* .member .first::before {
+    content: "first child";
+} */
 
 /* 헤더 */
 .visual{
