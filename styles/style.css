@@ -165,20 +165,44 @@ body {
     border-top-color: antiquewhite; */
 
     border-radius: 0 0 10px 10px;
-    display: flow-root;
+    /* display: flow-root; */
+    /* 높이값을 정해줬을 때는 필요 x */
 
     /* margin-left: 230px; */
     padding-left: 230px;
+
+    height: 47px;
 }
 
 .menu-item:first-child{
     /* double margin float bug */
     /* margin-left: 230px; */
+    /* border: 2px solid black; */
 }
 
 .menu-item{
-    background-color: brown;
+    /* background-color: brown; */
     float: left;
+    border-left: 2px solid antiquewhite;
+}
+
+.menu-button{
+    color: inherit;
+    background: transparent;
+    border: 0;
+
+    /* padding: 0; */
+    padding: 0 23px;
+    /* padding: 15px 0; */
+
+    line-height: 45px;
+
+    /* border-left: 2px solid antiquewhite; */
+
+    font-size: 15px;
+    font-weight: 700;
+    /* menu-item에게 주면 패딩과 보더가 클릭 가능 영역으로 잡히지 않음 / 사용성 이슈 */
+    /* 상속을 막기 위해 직접 필요한 영역에만 적용 -> 설계 HTML 구조에 대한 이해 필요 */
 }
 
 .sub-menu{
