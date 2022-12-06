@@ -147,7 +147,7 @@ body {
 
 .menu{
     background-color: red;
-    background-image: linear-gradient(darkred,red,darkred);
+    background-image: linear-gradient(red,darkred,red);
 
     /* border-radius: 0 0 5px 5px;
     background: #e85e2c
@@ -159,7 +159,34 @@ body {
             #e85e2c 70%,
             #ef9126 100%
         ); */
+    border-top: 2px solid currentColor;
+    /* border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: antiquewhite; */
+
+    border-radius: 0 0 10px 10px;
+    display: flow-root;
+
+    /* margin-left: 230px; */
+    padding-left: 230px;
 }
+
+.menu-item:first-child{
+    /* double margin float bug */
+    /* margin-left: 230px; */
+}
+
+.menu-item{
+    background-color: brown;
+    float: left;
+}
+
+.sub-menu{
+    /* background-color: palevioletred; */
+    position: absolute;
+    display: none;
+}
+
 .navigation{
     padding-bottom: 80px;
 }
