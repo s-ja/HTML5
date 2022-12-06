@@ -88,6 +88,11 @@ body {
     background-color: burlywood;
     padding: 6px 10px;
     display: inherit;
+    text-transform: uppercase;
+}
+
+.member li:last-child a{
+    padding-right: 0;
 }
 
 .divider{
