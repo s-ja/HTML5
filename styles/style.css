@@ -10,9 +10,6 @@
     box-sizing: border-box;
 }
 
-/* *{
-    box-sizing: border-box;
-} */
 /* color : red -> 상속가능 */
 /* box-sizing : border-box -> 상속불가능 */
 
