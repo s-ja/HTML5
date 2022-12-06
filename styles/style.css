@@ -2,13 +2,27 @@
 @import url(./reset.css);
 
 .a11y_hidden{
-    background-color: aquamarine;
+    /* background-color: royalblue; */
     /* display: none; */
     /* DOM tree 에서 못 읽음 */
     /* visibility: hidden; */
+    /* opacity: 0; */
+    /* color: transparent; */
+    /* 가상요소에서의 접근? */
 
     position: absolute;
-    top: -9999em
+    /* display: inline-block; */
+    /* top: -9999em */
+    width: 1px;
+    height: 1px;
+
+    margin: -1px;
+
+    overflow: hidden;
+
+    clip-path: polygon(0 0, 0 0, 0 0);
+    /* clip: rect(0 0 0 0); */
+    /* 마스킹 기법 */
 }
 /* 숨김 컨텐츠 */
 
