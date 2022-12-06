@@ -52,7 +52,7 @@ a:visited{
 
 body {
     /* background-color: rgb(88, 88, 88); */
-    background: rgb(128, 128, 128);
+    background: rgb(128, 128, 128) linear-gradient(to bottom, #ccc 0%, #eee 35%, #efefef 60%, #fff 100%);
     /* background: #ccc; */
     color: antiquewhite;
     /* color: #181818; */
@@ -256,8 +256,9 @@ body {
 }
 /* 슬로건 */
 .footer{
-    background: black;
-    color: whitesmoke;
+    /* background: black; */
+    background: rgb(128, 128, 128) linear-gradient(to top, #ccc 0%, #eee 35%, #efefef 60%, #fff 90%);
+    color: antiquewhite;
 }
 .footer-inner{
     height: 15vh;
