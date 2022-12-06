@@ -67,16 +67,22 @@ body {
 /* 로고 */
 
 .member{
-    background-color: darkred;
+    /* background-color: darkred; */
     color: antiquewhite;
     text-align: right;
     /* font-size: 0; */
     padding: 4px 0;
+    /* position: relative;
+    right: -10px; */
+
+    transform: translateX(10px);
+
+    /* 숙제 - margin 을 활용한 trick */
 }
 .member li{
     /* 문맥 선택자 - .member 안에 있는 li만 선택하겠음! */
 
-    background-color: brown;
+    /* background-color: brown; */
     /* display: inline; */
     /* padding: 10px; */
     display: inline-block;
@@ -85,15 +91,15 @@ body {
 }
 
 .member a{
-    background-color: burlywood;
+    /* background-color: burlywood; */
     padding: 6px 10px;
     display: inherit;
     text-transform: uppercase;
 }
 
-.member li:last-child a{
+/* .member li:last-child a{
     padding-right: 0;
-}
+} */
 
 .divider{
     margin-right: 4px;
