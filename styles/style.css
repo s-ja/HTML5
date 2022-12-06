@@ -54,7 +54,7 @@ body {
     /* background-color: rgb(88, 88, 88); */
     background: rgb(128, 128, 128);
     /* background: #ccc; */
-    color: darkred;
+    color: antiquewhite;
     /* color: #181818; */
     /* color: #212121; */
 
@@ -76,7 +76,8 @@ body {
 /* 본문스타일 */
 .header{
     /* background: rgb(255, 255, 255); */
-    background: rgb(255, 37, 37);
+    /* background: rgb(255, 37, 37); */
+    background-color: darkred;
 
     /* height: 15vh; */
     /* vh : 뷰포트 하이트(%) */
@@ -143,6 +144,29 @@ body {
 /* 텍스트 링크 모음 */
 
 /* 헤더 */
+
+.menu{
+    background-color: red;
+    background-image: linear-gradient(darkred,red,darkred);
+
+    /* border-radius: 0 0 5px 5px;
+    background: #e85e2c
+        linear-gradient(
+            to bottom,
+            #1e5799 0%,
+            #ef9126 0%,
+            #e85e2c 35%,
+            #e85e2c 70%,
+            #ef9126 100%
+        ); */
+}
+.navigation{
+    padding-bottom: 80px;
+}
+/* background-color/image/repeat/position/attachment/size */
+/* background: ->값과 값 사이를 공백으로 구분하여 단축 표기 ^ (숏핸드 표기) */
+/* 메인메뉴 */
+
 .visual{
     background: rgb(177, 177, 177);
     height: 10vh;
@@ -200,7 +224,7 @@ body {
 }
 
 .group1{
-    background-color: antiquewhite;
+    background-color: red;
     width: 250px;
     /* float: left; */
     /* margin-left: 30px; */
@@ -215,7 +239,7 @@ body {
     /* margin-left: 30px; */
 }
 .group3{
-    background-color: bisque;
+    background-color: red;
     width: 190px;
     /* float: left; */
     /* height: 100px; */
