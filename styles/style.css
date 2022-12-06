@@ -1,6 +1,17 @@
 @import url(./normalize.css);
 @import url(./reset.css);
 
+.a11y_hidden{
+    background-color: aquamarine;
+    /* display: none; */
+    /* DOM tree 에서 못 읽음 */
+    /* visibility: hidden; */
+
+    position: absolute;
+    top: -9999em
+}
+/* 숨김 컨텐츠 */
+
 *,
 *::after,
 *::before {
