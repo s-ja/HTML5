@@ -52,8 +52,10 @@ body {
 .header{
     /* background: rgb(255, 255, 255); */
     background: rgb(255, 37, 37);
-    height: 15vh;
+
+    /* height: 15vh; */
     /* vh : 뷰포트 하이트(%) */
+    /* 높이는 가급적 고정시키지 말것 - 컨텐츠에 따른 유연성 */
     padding: 0 30px;
 
     border-radius: 0 50px 0 50px;
