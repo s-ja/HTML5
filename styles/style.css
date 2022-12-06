@@ -203,6 +203,10 @@ body {
     font-weight: 700;
     /* menu-item에게 주면 패딩과 보더가 클릭 가능 영역으로 잡히지 않음 / 사용성 이슈 */
     /* 상속을 막기 위해 직접 필요한 영역에만 적용 -> 설계 HTML 구조에 대한 이해 필요 */
+
+    /* text-shadow: 1px 1px 0 #000, 2px 2px 0 #000, 3px 3px 0 #000, 4px 4px 0 #000; */
+    /* text-shadow: 1px 0px 0 #000, 0px 1px 0 #000, -1px 0px 0 #000, 0px -1px 0 #000; */
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
 }
 
 .sub-menu{
