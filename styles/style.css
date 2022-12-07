@@ -209,6 +209,15 @@ body {
     text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
 }
 
+.is-active .menu-button{
+    color: palevioletred;
+}
+.is-active .menu-button::after{
+    content: "";
+    border: 1px solid aliceblue;
+    display: block;
+}
+
 .sub-menu{
     /* background-color: palevioletred; */
     position: absolute;
