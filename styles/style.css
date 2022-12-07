@@ -135,6 +135,8 @@ body {
     display: inherit;
     text-transform: uppercase;
     font-weight: 400;
+    /* animation-name: moveEffect;
+    animation-duration: 2000ms; */
 }
 
 /* .member li:last-child a{
@@ -150,7 +152,7 @@ body {
 
 .menu{
     background-color: red;
-    background-image: linear-gradient(red,darkred,red);
+    background-image: linear-gradient(red,rgb(139, 0, 0),red);
 
     /* border-radius: 0 0 5px 5px;
     background: #e85e2c
@@ -309,22 +311,54 @@ body {
     background: rgb(177, 177, 177);
     /* height: 10vh; */
     height: 120px;
+    position: relative;
+    overflow: hidden;
 }
 
 .visual-text{
-    background-color: tomato;
+    /* background-color: tomato; */
+    /* animation-name: moveEffect_scale; */
+    /* font-size: 24px; */
     animation-name: moveEffect;
     animation-duration: 1000ms;
     animation-fill-mode: forwards;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    /* position: relative; */
+    /* position: absolute; */
+    /* display: inline-block; */
 }
 
 @keyframes moveEffect{
     /* @ : at sign rule */
     0%{
         font-size: 12px;
+        color: rgba(0,0,0,0.2);
+        /* margin: 0; */
+        /* padding: 0; */
+        /* top: 0;
+        left: 0; */
+        transform: translate(0,0);
     }
     100%{
         font-size: 24px;
+        color: rgba(139,0,0,1);
+        /* margin: 75px 0 0 400px; */
+        /* padding: 75px 0 0 400px; */
+        /* top: 75px;
+        left: 400px; */
+        transform: translate(400px, 75px);
+    }
+}
+/* 리플로우로 인한 성능 이슈 고려할것 - transform이 가장 나은 선택지 */
+
+@keyframes moveEffect_scale{
+    /* @ : at sign rule */
+    0%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
     }
 }
 
