@@ -315,9 +315,11 @@ body {
     background-color: tomato;
     animation-name: moveEffect;
     animation-duration: 1000ms;
+    animation-fill-mode: forwards;
 }
 
 @keyframes moveEffect{
+    /* @ : at sign rule */
     0%{
         font-size: 12px;
     }
