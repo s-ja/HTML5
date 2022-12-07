@@ -307,9 +307,24 @@ body {
 
 .visual{
     background: rgb(177, 177, 177);
-    height: 10vh;
+    /* height: 10vh; */
+    height: 120px;
 }
-/* 비주얼 */
+
+.visual-text{
+    background-color: tomato;
+}
+
+@keyframes moveEffect{
+    0%{
+        font-size: 12px;
+    }
+    100%{
+        font-size: 24px;
+    }
+}
+
+/* !비주얼 */
 .main{
     background: rgb(133, 133, 133);
     /* border: 3px solid rgb(174, 0, 0); */
@@ -384,7 +399,7 @@ body {
     /* margin-left: 30px; */
 }
 
-/* 메인 */
+/* !메인 */
 .slogan{
     background: rgb(66, 66, 66);
     color: rgb(218, 0, 0);
@@ -392,7 +407,7 @@ body {
     /* clear: both;
     margin-top: 50px; */
 }
-/* 슬로건 */
+/* !슬로건 */
 .footer{
     /* background: black; */
     background: rgb(128, 128, 128) linear-gradient(to top, #ccc 0%, #eee 35%, #efefef 60%, #fff 90%);
@@ -402,7 +417,7 @@ body {
     height: 15vh;
     background: darkred;
 }
-/* 푸터 */
+/* !푸터 */
 
 /* Better Comments VSC 확장 test */
 /* * 문자 : 초록색으로 표시 - 일반 정보 */
