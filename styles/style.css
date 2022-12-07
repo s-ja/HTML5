@@ -174,11 +174,15 @@ body {
     height: 47px;
 }
 
-.menu-item:first-child{
-    /* double margin float bug */
-    /* margin-left: 230px; */
-    /* border: 2px solid black; */
-}
+/* .menu li{
+    float: left;
+} */
+
+/* .menu-item:first-child{
+    double margin float bug
+    margin-left: 230px;
+    border: 2px solid black;
+} */
 
 .menu-item{
     /* background-color: brown; */
@@ -210,7 +214,7 @@ body {
 }
 
 .is-active .menu-button{
-    color: palevioletred;
+    color: green;
 }
 .is-active .menu-button::after{
     content: "";
@@ -219,16 +223,22 @@ body {
 }
 
 .sub-menu{
-    /* background-color: palevioletred; */
+    background-color: palevioletred;
     position: absolute;
     display: none;
+}
+
+.is-active .sub-menu{
+    display: block;
 }
 
 .navigation{
     padding-bottom: 80px;
 }
+
 /* background-color/image/repeat/position/attachment/size */
 /* background: ->값과 값 사이를 공백으로 구분하여 단축 표기 ^ (숏핸드 표기) */
+
 /* 메인메뉴 */
 
 .visual{
