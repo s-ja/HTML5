@@ -348,6 +348,7 @@ body {
         /* top: 75px;
         left: 400px; */
         transform: translate(400px, 75px);
+        font-weight: bolder;
     }
 }
 /* 리플로우로 인한 성능 이슈 고려할것 - transform이 가장 나은 선택지 */
