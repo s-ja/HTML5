@@ -313,6 +313,8 @@ body {
 
 .visual-text{
     background-color: tomato;
+    animation-name: moveEffect;
+    animation-duration: 1000ms;
 }
 
 @keyframes moveEffect{
