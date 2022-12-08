@@ -54,7 +54,7 @@ a:visited{
 
 body {
     /* background-color: rgb(88, 88, 88); */
-    background: rgb(128, 128, 128) linear-gradient(to bottom, #ccc 0%, #eee 35%, #efefef 60%, #fff 100%);
+    /* background: rgb(128, 128, 128) linear-gradient(to bottom, #ccc 0%, #eee 35%, #efefef 60%, #fff 100%); */
     /* background: #ccc; */
     color: antiquewhite;
     /* color: #181818; */
@@ -66,6 +66,14 @@ body {
     /* em & rem unit */
     /* em -> 바로 위 요소에서 상속 */
     /* rem -> root(HTML) 에서 상속 */
+
+    /* background-color: darkgray; */
+    background-image: url("./images/bg_flower.png"), linear-gradient(to bottom, #ccc 0%, #eee 35%, #efefef 60%, #fff 100%);
+    /* background-repeat: no-repeat, repeat; */
+    background-repeat: no-repeat, repeat;
+    background-position: 50% 0, 0 0;
+    /* background-size: 100px 100px;
+    background-attachment: fixed; */
 }
 
 .header, .visual, .main, .slogan, .footer-inner {
@@ -308,7 +316,7 @@ body {
 /* !메인메뉴 */
 
 .visual{
-    background: rgb(177, 177, 177);
+    /* background: rgb(177, 177, 177); */
     /* height: 10vh; */
     height: 120px;
     position: relative;
