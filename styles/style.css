@@ -67,14 +67,13 @@ body {
     /* em -> 바로 위 요소에서 상속 */
     /* rem -> root(HTML) 에서 상속 */
 
-    /* background-color: darkgray; */
-    /* background-image: url("./images/bg_flower.png"), linear-gradient(to bottom, #ccc 0%, #eee 35%, #efefef 60%, #fff 100%); */
-    /* background-repeat: no-repeat, repeat; */
-    /* background-repeat: no-repeat, repeat; */
-    /* background-position: 50% 0, 0 0; */
-    /* background-size: 100px 100px;
+    /* background-color: darkgray;
+    background-image: url("./images/bg_flower.png"), linear-gradient(to bottom, #ccc 0%, #eee 35%, #efefef 60%, #fff 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: 50% 0, 0 0;
+    background-size: 100px 100px;
     background-attachment: fixed; */
-    
+    background: url("./images/bg_flower.png") no-repeat 50% 0, aliceblue linear-gradient(to bottom, #ccc 0%, #eee 35%, #efefef 60%, #fff 100%) repeat 0 0;
 }
 
 .header, .visual, .main, .slogan, .footer-inner {
@@ -324,13 +323,47 @@ body {
     /* overflow: hidden; */
 }
 
+.visual::before, ::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    
+    /* animation-name: fadeEffect;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+
+    animation: fadeEffect 2000ms infinite alternate;
+}
+.visual::before{
+    /* background-color: crimson; */
+    /* background-image: url("./images/ani_flower_01.png"), url("./images/ani_flower_02.png");
+    background-position: 0 -10px, 600px 0;
+    background-repeat: no-repeat; */
+    background: url("./images/ani_flower_01.png") no-repeat 0 -10px, url("./images/ani_flower_02.png") no-repeat 600px 0;
+}
+.visual::after{
+    /* background-color: brown; */
+    /* background-image: url("./images/ani_flower_03.png"), url("./images/ani_flower_04.png");
+    background-position: 300px 10%, 800px 10%;
+    background-repeat: no-repeat; */
+    background: url("./images/ani_flower_03.png") no-repeat 300px 10%, url("./images/ani_flower_04.png") no-repeat 800px 10%;
+    animation-delay: 1000ms;
+}
+
 .visual-text{
     /* background-color: tomato; */
     /* animation-name: moveEffect_scale; */
     /* font-size: 24px; */
-    animation-name: moveEffect;
-    animation-duration: 1000ms;
-    animation-fill-mode: forwards;
+
+    /* animation-name: moveEffect;
+    animation-duration: 400ms;
+    animation-fill-mode: forwards; */
+    animation: moveEffect 400ms ease-in-out forwards ;
+    
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: whitesmoke;
     /* position: relative; */
@@ -339,7 +372,8 @@ body {
     animation-timing-function: 3000ms;
     display: inline-block;
 
-    position: absolute;
+    position: relative;
+    z-index: 1;
 }
 
 @keyframes moveEffect{
@@ -373,6 +407,19 @@ body {
     }
     100%{
         transform: scale(1);
+    }
+}
+
+@keyframes fadeEffect{
+    0% {
+        /* opacity: 1; */
+        opacity: 0;
+    }
+    /* 50% {
+        opacity: 0;
+    } */
+    100% {
+        opacity: 1;
     }
 }
 
