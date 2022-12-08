@@ -312,7 +312,7 @@ body {
     /* height: 10vh; */
     height: 120px;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .visual-text{
@@ -327,6 +327,10 @@ body {
     /* position: relative; */
     /* position: absolute; */
     /* display: inline-block; */
+    animation-timing-function: 3000ms;
+    display: inline-block;
+
+    position: absolute;
 }
 
 @keyframes moveEffect{
