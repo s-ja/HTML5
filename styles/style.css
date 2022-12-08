@@ -68,12 +68,13 @@ body {
     /* rem -> root(HTML) 에서 상속 */
 
     /* background-color: darkgray; */
-    background-image: url("./images/bg_flower.png"), linear-gradient(to bottom, #ccc 0%, #eee 35%, #efefef 60%, #fff 100%);
+    /* background-image: url("./images/bg_flower.png"), linear-gradient(to bottom, #ccc 0%, #eee 35%, #efefef 60%, #fff 100%); */
     /* background-repeat: no-repeat, repeat; */
-    background-repeat: no-repeat, repeat;
-    background-position: 50% 0, 0 0;
+    /* background-repeat: no-repeat, repeat; */
+    /* background-position: 50% 0, 0 0; */
     /* background-size: 100px 100px;
     background-attachment: fixed; */
+    
 }
 
 .header, .visual, .main, .slogan, .footer-inner {
