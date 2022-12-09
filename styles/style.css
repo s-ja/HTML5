@@ -4,7 +4,7 @@
 @import url("./reset.css");
 
 
-.a11y_hidden{
+.a11y_hidden, legend{
     /* background-color: royalblue; */
     /* display: none; */
     /* DOM tree 에서 못 읽음 */
@@ -27,6 +27,7 @@
     /* clip: rect(0 0 0 0); */
     /* 마스킹 기법 */
 }
+
 /* !숨김 컨텐츠 */
 
 *,
@@ -504,6 +505,10 @@ body {
 
 /* !메인 */
 
+.login *{
+    /* border: 1px solid lime; */
+}
+
 .login{
     box-shadow: 5px 5px 0 0 grey;
     /* background-color: darkred; */
@@ -512,37 +517,103 @@ body {
     padding: 10px;
 }
 
+.login-form{
+    margin-top: 10px;
+    background-color: antiquewhite;
+    border-radius: 5px 5px 0 0;
+    padding: 10px 10px 0 10px;
+    color: black;
+}
+
+.sign{
+    background-color: antiquewhite;
+    color: black;
+    border-radius: 0 0 5px 5px;
+    padding: 0 10px 10px 10px;
+}
+
 .login-title{
+    /* background-color: brown; */
+    text-indent: 10px;
+    /* margin-left: 10px;
+    padding-left: 10px; */
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 20px;
 }
 
 .user-email, .user-pw{
-    width: 160px;
+    width: 150px;
     margin: 0;
     padding: 0;
     display: inline-block;
+    line-height: 1.5em;
+    /* background-color: rebeccapurple; */
+}
+
+.user-email{
+    /* background: slategray; */
+}
+
+.user-pw{
+    /* background-color: darkslategray; */
+}
+
+.login-form label{
+    /* background-color: salmon; */
+    display: inline-block;
+    width: 4em;
+}
+
+.login-form input{
+    width: 90px;
+    height: 24px;
+}
+
+.login-form fieldset{
+    position: relative;
+    height: 50px;
+}
+
+.user-email>label, .user-pw>label{
+    /* width: 50px; */
 }
 
 .user-email>input, .user-pw>input{
-    width: 100px;
+    /* width: 90px;
+    height: 15px;
     float: right;
+    padding: 3px;
+    border: none;
+    border-radius: 3px; */
 }
 
 .login-button{
-    float: right;
+    /* float: right; */
+    position: absolute;
+    top: 0;
+    right: 0;
     width: 50px;
     height: 50px;
     font: 300;
     padding: 0;
     margin: 0;
+    background-color: darkred;
+    color: aliceblue;
+    border: 0;
+    border-radius: 5px;
 }
 
-.sign li:first-child{
+/* .sign li:first-child{
     float: left;
 }
 .sign li:last-child{
     float: right;
+} */
+
+.sign{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
 }
 
 /* !로그인 */
