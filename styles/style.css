@@ -64,7 +64,7 @@ body {
     /* color: #212121; */
 
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-    font-weight: 100;
+    /* font-weight: 100; */
     font-size: 1.4rem;
     /* em & rem unit */
     /* em -> 바로 위 요소에서 상속 */
@@ -543,11 +543,12 @@ body {
 
 .user-email, .user-pw{
     width: 150px;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     display: inline-block;
-    line-height: 1.5em;
+    /* line-height: 1.5em; */
     /* background-color: rebeccapurple; */
+    margin-bottom: 5px;
 }
 
 .user-email{
@@ -567,11 +568,16 @@ body {
 .login-form input{
     width: 90px;
     height: 24px;
+    border: 1px solid brown;
+    padding: 1px 1px 1px 5px;
+    border-radius: 3px;
 }
 
 .login-form fieldset{
     position: relative;
-    height: 50px;
+    /* height: 50px; */
+    border-bottom: 1px solid red;
+    padding-bottom: 5px;
 }
 
 .user-email>label, .user-pw>label{
@@ -592,11 +598,12 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    width: 50px;
-    height: 50px;
-    font: 300;
-    padding: 0;
-    margin: 0;
+    width: 55px;
+    height: 55px;
+    font-size: 13px;
+    /* font-weight: 700; */
+    /* margin: 0; */
+    padding: 0 8px;
     background-color: darkred;
     color: aliceblue;
     border: 0;
