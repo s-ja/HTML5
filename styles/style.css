@@ -612,13 +612,25 @@ body {
 
 /* .sign li{
     display: flow-root;
-} */
-
-/* .sign li:first-child{
+}
+.sign li:first-child{
     float: left;
 }
 .sign li:last-child{
     float: right;
+} */
+
+/* .sign li{
+    display: inline-block;
+    width: 50%;
+    font-size: 14px;
+}
+.sign li:first-child{
+    width: 35%;
+}
+.sign li:last-child{
+    width: 65%;
+    text-align: right;
 } */
 
 .sign{
@@ -628,9 +640,11 @@ body {
     /* padding-top: 6px; */
     color: rgb(91, 91, 91);
     font-size: 13px;
+    /* font-size: 0; */
 }
 
 .sign a{
+    /* display: inline-block; */
     display: block;
     padding: 6px 0;
     letter-spacing: -.5px;
