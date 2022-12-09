@@ -679,6 +679,54 @@ body {
     /* clear: both;
     margin-top: 50px; */
 }
+
+.validation-list{
+    /* background-color: violet; */
+    margin-top: 25px;
+    /* padding-top: 1px; */
+    /* border-top: 1px solid red; */
+    /* display: flex; */
+}
+.validation-list li{
+    /* background-color: maroon; */
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+    /* *마진중첩 이슈를 보기 위한 테스트 */
+}
+
+.validation-list a{
+    background: url("./images/validation_icon.png") no-repeat 25px 50%, maroon linear-gradient(to bottom, maroon, black);
+    border: 1px solid black;
+    padding: 8px 15px 8px 50px;
+    border-radius: 30px;
+    display: block;
+    color: aliceblue;
+    /* text-align: center; */
+    
+    /* background-image: url("./images/validation_icon.png"); */
+    /* background-repeat: no-repeat; */
+    /* background-position: 10px 50%; */
+    /* display: inline-block; */
+    /* text-indent: 20px; */
+    /* line-height: 30px; */
+    /* width: 250px; */
+    /* height: 50px; */
+}
+
+/* .validation-list a::before{
+    content: url("./images/validation_icon.png") ;
+    background-color: #ccc;
+    vertical-align: middle;
+} */
+
+.validation-list a:hover, .validation-list a:focus{
+    color: red;
+    box-shadow: 5px 5px 10px red;
+
+}
+
+/* !유효성 검사 배너 */
+
 /* !슬로건 */
 .footer{
     /* background: black; */
