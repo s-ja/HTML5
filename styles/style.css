@@ -736,27 +736,35 @@ body {
 .term_title{
     font-size: 1.5rem;
     font: 700;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
 .term_list{
-    margin-top: 10px;
-    background: brown;
+    margin-top: 15px;
+    /* background: brown; */
 }
 .term_list div{
-    background: blueviolet;
+    /* background: blueviolet; */
     margin-top: 10px;
     display: flow-root;
 }
+
+.term_list_subject,
+.term_list_brief {
+  float: right;
+  width: 145px;
+}
+
 .term_list_subject{
-    background: red;
+    /* background: red; */
     /* margin-bottom:5px; */
     /* font-size: 1.2em; */
-    float: right;
-    width: 140px;
+    /* float: right; */
+    /* width: 140px; */
+    color: aliceblue;
 }
 .term_list_thumbnail{
-    background-color: tomato;
+    /* background-color: tomato; */
     /* display: flex; */
     float: left;
 }
@@ -765,9 +773,18 @@ body {
      vertical-align: middle;
 }
 .term_list_brief{
-    background-color: coral;
-    float: right;
+    /* background-color: coral; */
+    /* float: right; */
     width: 140px;
+    line-height: 1.5;
+    margin-top: 5px;
+}
+.cross .term_list_subject,
+.cross .term_list_brief {
+  float: left;
+}
+.cross .term_list_thumbnail {
+    float: right;
 }
 
 /* .odd{
