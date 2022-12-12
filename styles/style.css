@@ -489,7 +489,7 @@ body {
 
 .group2{
     /* background-color: blanchedalmond; */
-    background-color: tomato;
+    /* background-color: tomato; */
     color: blanchedalmond;
     width: 380px;
     /* float: left; */
@@ -723,7 +723,8 @@ body {
     color: red;
     box-shadow: 5px 5px 10px red;
 }
-/* !웹관련 용어 */
+
+/* !유효성 검사 배너 */
 .term{
     background: maroon linear-gradient( to bottom, red , maroon );
     color: aliceblue;
@@ -758,10 +759,10 @@ body {
 .term_list_subject{
     /* background: red; */
     /* margin-bottom:5px; */
-    /* font-size: 1.2em; */
+    font-size: 1.2em;
     /* float: right; */
     /* width: 140px; */
-    color: aliceblue;
+    color: orange;
 }
 .term_list_thumbnail{
     /* background-color: tomato; */
@@ -771,6 +772,7 @@ body {
 .term_list_thumbnail img{
     /* display: block; */
      vertical-align: middle;
+     box-shadow: 5px 5px 5px black;
 }
 .term_list_brief{
     /* background-color: coral; */
@@ -804,8 +806,59 @@ body {
 .even .term_list_thumbnail{
     float: right;
 } */
+/* !웹관련 용어 */
 
-/* !유효성 검사 배너 */
+.search-form{
+    /* background-color: maroon; */
+    background: maroon linear-gradient( to top, red, maroon);
+    padding: 15px 25px 10px;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid maroon;
+    width: 380px;
+}
+.search-form-inner{
+    display: flex;
+    flex-flow: row nowrap;
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-grow: 1;
+    /* background-color: violet; */
+    /* border: 1px solid lime; */
+}
+.form-group{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    /* border: 1px solid lightseagreen; */
+    padding-right: 10px;
+}
+.form-group-label{
+    margin: 0 10px;
+    white-space: nowrap;
+    margin-right: 10px;
+}
+.form-group-input{
+    flex-grow: 1;
+    /* width: 180px; */
+    /* min-width: 0; */
+    /* max-width: 100%; */
+
+    border: 1px solid black;
+    border-radius: 3px;
+    height: 24px;
+    padding: 1px 1px 1px 5px;
+}
+.search-button{
+    background-color: black;
+    color: aliceblue;
+    padding: 5px;
+    border-radius: 3px;
+    border: 0;
+    white-space: nowrap;
+    height: 24px;
+    font-size: 1.2rem;
+}
+/* !search form 검색 폼 */
 
 /* !슬로건 */
 .footer{
