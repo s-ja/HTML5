@@ -881,44 +881,46 @@ body {
 .tab_list{
     display: flex;
     flex-flow: row nowrap;
+    /* column-gap: 2px; */
 }
 .tab{
-    border: 1px solid red;
-    background-color: darkred;
+    border: 2px solid #aaa;
+    border-bottom: none;
+    background-color: #ccc;
+    /* background: #ccc linear-gradient(to bottom, #ccc, white); */
     border-radius: 5px 5px 0 0;
     padding: 5px 10px;
-    color: darkgray;
+    color: darkred;
+    font-weight: 600;
+    font-size: 1.3rem;
+    width: 100px;
 }
 
-.is_sellect.tab{
+.is_select.tab{
     background-color: white;
     color: darkred;
-    border-color: currentColor currentColor white currentColor;
+    border-color: red red white red;
 }
 
-.board_more{
-    /* background-color: aqua; */
-    position: absolute;
-    top: -8px;
-    right: -8px;
-    padding: 8px;
+.tab_panel{
+    display: none;
+    margin-top: 15px;
 }
-
-.icon_plus::before{
-    /* color: hsla(hue, saturation, lightness, alpha); */
-    color: hsla(110, 50%, 50%, 1);
+.is_select.tab_panel{
+    display: block;
 }
 
 .board_list li{
     /* background-color: red; */
     margin-top: 10px;
     display: flex;
+    flex-flow: row nowrap;
     justify-content: space-between;
 }
 
 .board_list a{
-    flex-shrink: 1;
     /* background-color: tomato; */
+    flex-grow: 1;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -928,10 +930,26 @@ body {
     margin-left: 10px;
 }
 
-/* .tab_pannel{
+.board_more{
+    /* background-color: aqua; */
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    padding: 8px;
+    font-weight: 600;
+    color: darkslategrey;
+}
+
+.icon-plus::before{
+    /* color: hsla(hue, saturation, lightness, alpha); */
+    /* color: hsla(110, 50%, 50%, 1); */
+    color: red;
+}
+
+/* .tab_panel{
     display: none;
 }
-.is_sellect.tab_pannel{
+.is_select.tab_panel{
     display: none;
     display: block;
 }
@@ -941,7 +959,7 @@ body {
     color: antiquewhite;
     width: 100px;
 }
-.tab.is_sellect{
+.tab.is_select{
     background-color: white;
     color: darkred;
     border: 1px solid darkred;
