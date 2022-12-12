@@ -871,10 +871,102 @@ body {
     flex-shrink: 0;
 }
 /* !search form 검색 폼 */
+
 .board{
-    background-color: darkred;
+    /* background-color: darkred; */
+    margin-top: 20px;
+    color: black;
+    position: relative;
 }
-/* !board */
+.tab_list{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.tab{
+    border: 1px solid red;
+    background-color: darkred;
+    border-radius: 5px 5px 0 0;
+    padding: 5px 10px;
+    color: darkgray;
+}
+
+.is_sellect.tab{
+    background-color: white;
+    color: darkred;
+    border-color: currentColor currentColor white currentColor;
+}
+
+.board_more{
+    /* background-color: aqua; */
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    padding: 8px;
+}
+
+.icon_plus::before{
+    /* color: hsla(hue, saturation, lightness, alpha); */
+    color: hsla(110, 50%, 50%, 1);
+}
+
+.board_list li{
+    /* background-color: red; */
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.board_list a{
+    flex-shrink: 1;
+    /* background-color: tomato; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.board_list time{
+    flex-shrink: 0;
+    margin-left: 10px;
+}
+
+/* .tab_pannel{
+    display: none;
+}
+.is_sellect.tab_pannel{
+    display: none;
+    display: block;
+}
+.tab_list button{
+    background-color: red;
+    border: 0;
+    color: antiquewhite;
+    width: 100px;
+}
+.tab.is_sellect{
+    background-color: white;
+    color: darkred;
+    border: 1px solid darkred;
+}
+.board_more{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.board_more::before{
+    content: "\e801";
+    font-family: fontello;
+    color: maroon;
+}
+
+.board_list li a{
+    float: left;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.board_list li time{
+    float: right;
+} */
+
+/* !board 공지사항 및 자료실*/
 
 /* !슬로건 */
 .footer{
