@@ -814,13 +814,13 @@ body {
     padding: 15px 25px 10px;
     border-radius: 10px 10px 0 0;
     border: 1px solid maroon;
-    width: 380px;
+    /* width: 300px; */
 }
 .search-form-inner{
     display: flex;
     flex-flow: row nowrap;
-    /* justify-content: space-between; */
-    align-items: center;
+    justify-content: space-between;
+    /* align-items: center; */
     flex-grow: 1;
     /* background-color: violet; */
     /* border: 1px solid lime; */
@@ -833,13 +833,16 @@ body {
     padding-right: 10px;
 }
 .form-group-label{
-    margin: 0 10px;
-    white-space: nowrap;
+    /* margin: 0 10px; */
+    /* white-space: nowrap; */
+
+    flex-shrink: 0;
     margin-right: 10px;
 }
 .form-group-input{
     flex-grow: 1;
     /* width: 180px; */
+    width: 100%;
     /* min-width: 0; */
     /* max-width: 100%; */
 
@@ -854,9 +857,11 @@ body {
     padding: 5px;
     border-radius: 3px;
     border: 0;
-    white-space: nowrap;
     height: 24px;
     font-size: 1.2rem;
+    /* white-space: nowrap; */
+    flex-shrink: 0;
+    
 }
 /* !search form 검색 폼 */
 
