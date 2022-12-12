@@ -722,8 +722,71 @@ body {
 .validation-list a:hover, .validation-list a:focus{
     color: red;
     box-shadow: 5px 5px 10px red;
-
 }
+/* !웹관련 용어 */
+.term{
+    background: maroon linear-gradient( to bottom, red , maroon );
+    color: aliceblue;
+    margin-top: 20px;
+    border: 1px solid red;
+    border-radius: 20px;
+    padding: 12px;
+}
+
+.term_title{
+    font-size: 1.5rem;
+    font: 700;
+    margin-bottom: 10px;
+}
+
+.term_list{
+    margin-top: 10px;
+    background: brown;
+}
+.term_list div{
+    background: blueviolet;
+    margin-top: 10px;
+    display: flow-root;
+}
+.term_list_subject{
+    background: red;
+    /* margin-bottom:5px; */
+    /* font-size: 1.2em; */
+    float: right;
+    width: 140px;
+}
+.term_list_thumbnail{
+    background-color: tomato;
+    /* display: flex; */
+    float: left;
+}
+.term_list_thumbnail img{
+    /* display: block; */
+     vertical-align: middle;
+}
+.term_list_brief{
+    background-color: coral;
+    float: right;
+    width: 140px;
+}
+
+/* .odd{
+    margin-bottom: 10px;
+    background-color: red;
+}
+.even{
+    margin-bottom: 10px;
+}
+.term_list_brief{
+    color: antiquewhite;
+}
+
+.odd .term_list_thumbnail{
+    float: left;
+}
+.even .term_list_thumbnail{
+    float: right;
+} */
 
 /* !유효성 검사 배너 */
 
