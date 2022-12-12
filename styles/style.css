@@ -862,7 +862,7 @@ body {
 .search-button{
     background-color: black;
     color: aliceblue;
-    padding: 5px;
+    padding: 0 10px;
     border-radius: 3px;
     border: 0;
     height: 24px;
