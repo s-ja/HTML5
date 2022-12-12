@@ -264,7 +264,9 @@
                 <label for="search" class="form-group-label"><span class="icon-search" aria-hidden="true"></span>자료검색</label>
                 <input type="search" id="search" class="form-group-input" required placeholder="검색어를 입력하세요. 예)HTML5" />
               </div>
-              <button type="submit" class="search-button ``button-fill button">검색</button>
+              <button type="submit" class="search-button ``button-fill button">
+                검색
+              </button>
             </div>
           </fieldset>
         </form>
@@ -272,27 +274,69 @@
         <div class="board">
           <ul class="tab_list" role="tablist">
             <li role="none">
-              <button type="button" class="tab" role="tab">
+              <button type="button" class="tab" role="tab" aria-controls="notice" id="notice_button" aria-selected="true">
                 공지사항
               </button>
             </li>
           </ul>  
           <ul class="tab_list" role="tablist">
             <li>
-              <button type="button" class="tab" role="tab">
+              <button type="button" class="tab" role="tab" aria-controls="archive" id="archive_button" aria-selected="false">
                 자료실
               </button>
             </li>
           </ul>
-          <div class="notice tap_pannel" role="tabpannel">
+          <div class="notice tap_pannel" role="tabpannel" id="notice" aria-labelledby="notice_button">
             <h2 class="a11y_hidden">공지사항</h2>
-             <ul class="board_list"></ul>
-             <a href="/" class="board_more icon_plus">더보기</a>
+             <ul class="board_list">
+              <li>
+                <a class="icon-stop" href="/">HTML의 모든 것을 알려주마 샘플 활용법</a>
+                <time datetime="2022-12-12T13:53:45">2022.12.12</time>
+              </li>
+              <li>
+                <a class="icon-stop" href="/">W3C 사이트 리뉴얼 및 공지사항</a>
+                <time datetime="2022-12-12T13:53:45">2022.12.12</time>
+              </li>
+              <li>
+                <a class="icon-stop" href="/">KWCAG 2.1 소식</a>
+                <time datetime="2022-12-12T13:53:45">2022.12.12</time>
+              </li>
+              <li>
+                <a class="icon-stop" href="/">서버 점검으로 인한 사이트 이용안내 입니다.</a>
+                <time datetime="2022-12-12T13:53:45">2022.12.12</time>
+              </li>
+              <li>
+                <a class="icon-stop" href="/">여러분들이 생각하는 웹 접근성에 대해 이야기를 나누어 봅시다.</a>
+                <time datetime="2022-12-12T13:53:45">2022.12.12</time>
+              </li>
+             </ul>
+             <a href="/" class="board_more icon_plus" aria-labelledby="notice_button">더보기</a>
           </div>
-          <div class="archive tap_pannel" role="tabpannel">
+          <div class="archive tap_pannel" role="tabpannel" id="archive" aria-labelledby="archive_button">
             <h2 class="a11y_hidden">자료실</h2>
-             <ul class="board_list"></ul>
-             <a href="/" class="board_more icon_plus">더보기</a>
+             <ul class="board_list">
+              <li>
+                <a class="icon-stop" href="/">디자인 사이트 링크 모음</a>
+                <time datetime="2022-12-21T13:53:45">2022.12.21</time>
+              </li>
+              <li>
+                <a class="icon-stop" href="/">웹 접근성 관련 자료 모음</a>
+                <time datetime="2022-12-21T13:53:45">2022.12.21</time>
+              </li>
+              <li>
+                <a class="icon-stop" href="/">예제 샘플 응용해보기</a>
+                <time datetime="2022-12-21T13:53:45">2022.12.21</time>
+              </li>
+              <li>
+                <a class="icon-stop" href="/">웹 접근성 향상을위한 국가 표준 기술 가이드라인</a>
+                <time datetime="2022-12-21T13:53:45">2022.12.21</time>
+              </li>
+              <li>
+                <a class="icon-stop" href="/">로얄티 프리 이미지 자료</a>
+                <time datetime="2022-12-21T13:53:45">2022.12.21</time>
+              </li>    
+             </ul>
+             <a href="/" class="board_more icon_plus" aria-labelledby="archive_button" >더보기</a>
           </div>
         </div>
 

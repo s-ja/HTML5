@@ -871,6 +871,10 @@ body {
     flex-shrink: 0;
 }
 /* !search form 검색 폼 */
+.board{
+    background-color: darkred;
+}
+/* !board */
 
 /* !슬로건 */
 .footer{
