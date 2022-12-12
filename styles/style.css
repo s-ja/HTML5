@@ -817,14 +817,22 @@ body {
     /* width: 300px; */
 }
 .search-form-inner{
+    /* justify-content: center; */
+
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
-    /* align-items: center; */
+    /* justify-content: space-between; */
+    align-items: center;
     flex-grow: 1;
     /* background-color: violet; */
     /* border: 1px solid lime; */
 }
+
+.search-form-inner .form-group {
+    flex-grow: 1;
+    margin-right: 12px;
+  }
+
 .form-group{
     display: flex;
     flex-flow: row nowrap;
