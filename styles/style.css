@@ -1103,6 +1103,128 @@ body {
     color: darkorange;
 } */
 
+.event{
+    border-bottom: 1px solid antiquewhite;
+    position: relative;
+
+    /* display: flow-root; */
+    /* 이거 쓰려면 타이틀이랑 래퍼 묶어뒀어야 함! */
+
+    /* border-top: 1px solid transparent; */
+}
+
+.event-title{
+    /* float: left; */
+    display: inline-block;
+}
+
+.event-button-wrapper{
+    /* background-color: gold; */
+    /* border: 1px solid lime; */
+    height: 20px;
+    overflow: hidden;
+
+    /* position: absolute;
+    top: 0;
+    right: 0; */
+    float: right;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 5px;
+}
+
+/* #eventDetail{
+    background-color: gold;
+    clear: both;
+
+    padding-top: 10px;
+    margin-top: 30px;
+} */
+
+.event-button{
+    /* background-color: darkgoldenrod; */
+    width: 19px;
+    height: 100%;
+    border: 0;
+    
+    /* font-size: 0; */
+    /* IR기법 - image replacement */
+    padding: 18px 0 0 0;
+    /* text-indent: 9999px; */
+}
+
+.event-button:focus{
+    outline-offset: -2px;
+}
+
+.event-button-prev{
+    background-image: url("./images/back_forward.png");
+    background-position: top left;
+}
+.event-button-next{
+    background-image: url("./images/back_forward.png");
+    background-position: top right;
+}
+
+.event-thumbnail, .event-brief{
+    margin: 10px;
+}
+
+.event-thumbnail img{
+    border: 1px solid black;
+    box-shadow: 5px 5px 0 0 red;
+}
+
+.event-brief{
+    line-height: 1.5;
+}
+
+.related{
+    /* padding-top: 10px; */
+    margin-top: 10px;
+}
+
+.related-list{
+    color: #666;
+    background-color: antiquewhite;
+    margin-top: 10px;
+
+    border: 1px solid red;
+    /* border-radius: 15px 0 15px 0; */
+    border-radius: 5px;
+    margin-top: 10px;
+
+    /* transition-property: all; */
+    /* transition-property: background-color, border-radius; */
+    /* transition-duration: 1000ms, 2000ms; */
+    /* 애니메이션 듀레이션과 같은 효과 */
+    /* transition-delay: 1000ms, 2000ms; */
+    /* 시퀀스 애니메이션 */
+    /* transition-timing-function: ease-in-out; */
+
+    /* transition: background-color 2000ms 0ms ease-in-out, border-radius 2000ms 2000ms ease-in-out; */
+
+    height: 27px;
+    overflow: hidden;
+    transition: height 1000ms ease-in-out;
+}
+
+.related-list li{
+    line-height: 25px;
+    text-indent: 10px;
+}
+
+.related-list:hover, .related-list:focus{
+    /* color: antiquewhite;
+    background-color: maroon;
+    border: 1px solid antiquewhite;
+    border-radius: 0 15px 0 15px; */
+
+    height: 147px;
+}
+
 /* !신규 이벤트 및 관련 서비스 */
 
 /* !슬로건 */
