@@ -1007,7 +1007,7 @@ body {
   }
 
   .news-title{
-    /* color: black; */
+    color: darkred;
     font-size: 1.5rem;
     font-weight: 700;
     /* margin: 10px 0; */
@@ -1015,7 +1015,8 @@ body {
   
   .news-link {
     /* background-color: coral; */
-    border: 1px solid lime;
+    /* border: 1px solid lime; */
+    display: block;
   }
   
   .news-item {
@@ -1045,7 +1046,7 @@ body {
   .news-item-title {
     /* background-color: tomato; */
     font-weight: 500;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     /* margin: 10px 0; */
   }
   
