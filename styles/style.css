@@ -1040,7 +1040,6 @@ body {
   /* .news-item-title, .news-item-brief, .news-item-date{
     float: right;
     width: 60%;
-    display: inline-block;
   } */
   
   .news-item-title {
@@ -1053,7 +1052,11 @@ body {
   .news-item-date {
     /* background-color: crimson; */
     /* margin-bottom: 10px; */
+
+    /* display: inline-block; */
     display: block;
+    margin: 5px 0 10px;
+    /* padding: 10px 0; */
     margin: 5px 0 10px;
   }
   
@@ -1069,6 +1072,11 @@ body {
     top: 0;
     left: 0;
     text-align: center;
+  }
+  .news-item-thumbnail img{
+    /* img = born to be 'inline block' */
+    box-shadow: 0 15px 10px 5px #ccc;
+    margin-bottom: 15px;
   }
   
   .news-more {
