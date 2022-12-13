@@ -1214,11 +1214,13 @@ body {
 .related-list li{
     line-height: 25px;
     /* text-indent: 10px; */
-    display: flex;
-    flex-flow: row nowrap;
+    /* display: flex; */
+    /* flex-flow: row nowrap; */
 
     align-items: center;
     /* padding: 0; */
+
+    /* transform: none; */
 }
 
 .related-list a{
@@ -1234,9 +1236,14 @@ body {
     border-radius: 0 15px 0 15px; */
 
     height: 147px;
+    /* height: auto; */
 
     padding: 10px 0;
 }
+
+/* .related-list:hover li, .related-list:focus li{
+    transform: translateY(10px);
+} */
 
 /* !신규 이벤트 및 관련 서비스 */
 
