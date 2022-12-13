@@ -2,6 +2,7 @@
 @import url("./fonts.css");
 @import url("./normalize.css");
 @import url("./reset.css");
+@import url("./module.css");
 
 
 .a11y_hidden, legend{
@@ -496,7 +497,8 @@ body {
     /* margin-left: 30px; */
 }
 .group3{
-    background-color: red;
+    /* background-color: #ccc; */
+    /* background-color: darkred; */
     width: 190px;
     /* float: left; */
     /* height: 100px; */
@@ -1007,7 +1009,7 @@ body {
   }
 
   .news-title{
-    color: darkred;
+    /* color: darkred; */
     font-size: 1.5rem;
     font-weight: 700;
     /* margin: 10px 0; */
@@ -1090,6 +1092,18 @@ body {
   }
 
 /* !news / 새소식 */
+
+/* .gradient-effect{
+    background: #ccc linear-gradient( to bottom, darkred, black);
+    border: 1px solid red;
+    border: 5px;
+}
+
+.accent-color{
+    color: darkorange;
+} */
+
+/* !신규 이벤트 및 관련 서비스 */
 
 /* !슬로건 */
 .footer{
