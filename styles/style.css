@@ -1208,12 +1208,23 @@ body {
 
     height: 27px;
     overflow: hidden;
-    transition: height 1000ms ease-in-out;
+    transition: height 400ms 0ms ease-in-out, padding 400ms 100ms ;
 }
 
 .related-list li{
     line-height: 25px;
-    text-indent: 10px;
+    /* text-indent: 10px; */
+    display: flex;
+    flex-flow: row nowrap;
+
+    align-items: center;
+    /* padding: 0; */
+}
+
+.related-list a{
+    /* background-color: brown; */
+    flex-grow: 1;
+    padding: 0 10px;
 }
 
 .related-list:hover, .related-list:focus{
@@ -1223,6 +1234,8 @@ body {
     border-radius: 0 15px 0 15px; */
 
     height: 147px;
+
+    padding: 10px 0;
 }
 
 /* !신규 이벤트 및 관련 서비스 */
