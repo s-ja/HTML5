@@ -896,7 +896,7 @@ body {
     width: 100px;
 }
 
-.is_select.tab{
+.is-select.tab{
     background-color: white;
     color: darkred;
     border-color: red red white red;
@@ -906,7 +906,7 @@ body {
     display: none;
     margin-top: 15px;
 }
-.is_select.tab_panel{
+.is-select.tab_panel{
     display: block;
 }
 
@@ -949,7 +949,7 @@ body {
 /* .tab_panel{
     display: none;
 }
-.is_select.tab_panel{
+.is-select.tab_panel{
     display: none;
     display: block;
 }
@@ -959,7 +959,7 @@ body {
     color: antiquewhite;
     width: 100px;
 }
-.tab.is_select{
+.tab.is-select{
     background-color: white;
     color: darkred;
     border: 1px solid darkred;
@@ -985,6 +985,12 @@ body {
 } */
 
 /* !board 공지사항 및 자료실*/
+
+.news{
+    background-color: maroon;
+}
+
+/* !news / 새소식 */
 
 /* !슬로건 */
 .footer{
