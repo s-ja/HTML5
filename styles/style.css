@@ -1252,7 +1252,116 @@ body {
 
 /* !신규 이벤트 및 관련 서비스 */
 
+.favorite{
+    /* background-color: gold; */
+    position: relative;
+}
 
+.favorite-list{
+    /* background-color: pink; */
+    /* padding-left: 40px; */
+    /* overflow: hidden; */
+    list-style-type: none;
+    /* counter-reset: number 10; */
+}
+
+.favorite-list li{
+    margin-top: 10px;
+    counter-increment: number;
+    position: relative;
+}
+
+.favorite-list li::before{
+    /* content: "1"; */
+
+    content: counter(number);
+
+    background-color: #aaa;
+    color: white;
+    padding: 1px 5px;
+    font-size: 1.2rem;
+    margin-right: 5px;
+    border-radius: 3px;
+    /* display: inline-block; */
+    /* width: 1.3em; */
+    /* text-align: center; */
+    /* line-height: 1.5; */
+}
+
+/* .favorite-list .no1::before{
+    content: "1";
+}
+.favorite-list .no2::before{
+    content: "2";
+}
+.favorite-list .no3::before{
+    content: "3";
+}
+.favorite-list .no4::before{
+    content: "4";
+} */
+
+/* .favorite-list .no2::before{
+    content: "2";
+    background-color: #aaa;
+    color: white;
+    padding: 1px 5px;
+    font-size: 1.2rem;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+.favorite-list .no3::before{
+    content: "3";
+    background-color: #aaa;
+    color: white;
+    padding: 1px 5px;
+    font-size: 1.2rem;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+.favorite-list .no4::before{
+    content: "4";
+    background-color: #aaa;
+    color: white;
+    padding: 1px 5px;
+    font-size: 1.2rem;
+    margin-right: 5px;
+    border-radius: 3px;
+} */
+
+.up, .stop, .down{
+    width: 20px;
+    height: 11px;
+    display: inline-block;
+    /* background-color: violet; */
+    margin: 2px 0;
+    position: absolute;
+    top: 2px;
+    right: 0;
+}
+
+.up{
+    background-image: url("./images/rank.png");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.stop{
+    background-image: url("./images/rank.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.down{
+    background-image: url("./images/rank.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.favorite-more{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    padding: 8px;
+}
 
 /* !인기 사이트 */
 
