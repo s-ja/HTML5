@@ -40,19 +40,19 @@ body {
 /* 본문스타일 */
 .header{
     background: rgb(255, 255, 255);
-    height: 15vh;
+    /* height: 15vh; */
     /* vh : 뷰포트 하이트(%) */
     padding: 0 30px;
     border-radius:  0 0 15px 15px;
 }
 
 .member {
-    color: floralwhite;
     background-color: darkred;
+    /* color: floralwhite;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
-    font-weight: 400;
+    font-weight: 400; */
 }
 /* :before / ::before -> first child */
 /* :after / ::after -> last child */
@@ -118,8 +118,9 @@ body {
 
 /* 헤더 */
 .visual{
-    background: rgb(177, 177, 177);
-    height: 10vh;
+    /* background: rgb(177, 177, 177); */
+    /* height: 10vh; */
+    height: 120px;
 }
 /* 비주얼 */
 .main{
@@ -178,14 +179,14 @@ body {
 } */
 /* CSS 가상요소 예시 */
 
-/* .group{
-    margin: 0 15px;
+.group{
+    /* margin: 0 15px; */
 
     float: left;
-} */
+}
 
 .group1{
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     width: 250px;
     /* float: left; */
     /* margin-left: 30px; */
@@ -193,14 +194,14 @@ body {
 }
 .group2{
     /* background-color: blanchedalmond; */
-    background-color: rgb(121, 0, 0);
+    /* background-color: rgb(121, 0, 0); */
     color: blanchedalmond;
     width: 380px;
     /* float: left; */
     /* margin-left: 30px; */
 }
 .group3{
-    background-color: bisque;
+    /* background-color: bisque; */
     width: 190px;
     /* flex-grow: 1; */
     /* float: left; */
@@ -212,7 +213,7 @@ body {
 .slogan{
     background: rgb(66, 66, 66);
     color: rgb(218, 0, 0);
-    height: 10vh;
+    /* height: 10vh; */
     /* clear: both;
     margin-top: 50px; */
 }
@@ -220,14 +221,14 @@ body {
 .footer{
     background: black;
     color: whitesmoke;
-    width: 940px;
+    /* width: 940px; */
     margin: 0 auto;
 }
 .footer-inner{
-    height: 15vh;
+    /* height: 15vh; */
     background: darkred;
-    position: relative;
-    top: -10px;
-    left: -10px;
+    /* position: relative; */
+    /* top: -10px; */
+    /* left: -10px; */
 }
 /* 푸터 */
