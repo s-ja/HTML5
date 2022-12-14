@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+.a11y-hidden{
+
+}
+
 html{
     font-size: 10px;
 }
@@ -232,22 +236,47 @@ body {
 }
 
 .event-button-wrapper{
-    background-color: brown;
+    /* background-color: brown; */
     color: bisque;
+    overflow: hidden;
+    /* height: 24px; */
+    padding: 4px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    gap: 5px;
 }
 
 .margin-top-default{
     margin-top: 20px;
 }
 
+.event{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+}
+
+.event-title{
+    /* background-color: red; */
+}
+
 .event-button{
     width: 19px;
     border: 0;
-    padding: 20px 0 0 0;
+    height: 18px;
+    /* padding: 18px 0 0 0; */
+    padding: 0;
+    /* text-indent: -9999999px; */
     background: none;
     background: maroon url("./images/back_forward.png") no-repeat;
-
 }
+
+/* .event-button:focus{
+    border: 2px solid inherit;
+} */
 
 .event-button-next{
     background-position: -36px 0;
@@ -262,7 +291,9 @@ body {
     box-shadow: 5px 5px 5px black;
 }
 
-.favorite{
+.related{
+    border: 1px solid #aaa;
+    
 }
 
 /* !인기 사이트 */
