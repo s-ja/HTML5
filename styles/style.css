@@ -293,7 +293,9 @@ body {
 
 .related{
     border: 1px solid #aaa;
-    
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 /* !인기 사이트 */
