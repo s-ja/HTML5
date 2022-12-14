@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 10px;
+}
+
 /* color : red -> 상속가능 */
 /* box-sizing : border-box -> 상속불가능 */
 
@@ -23,6 +27,7 @@ a{
 /* 링크 스타일 */
 
 body {
+    font-size: 1.4rem;
     /* background-color: rgb(88, 88, 88); */
     background: rgb(128, 128, 128);
     color: darkred;
@@ -208,6 +213,59 @@ body {
     /* height: 100px; */
     /* margin-left: 30px; */
 }
+
+.gradient-effect{
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 10px;
+    background: #ccc linear-gradient( to bottom, #ccc , #eee);
+}
+/* !신규 이벤트 및 관련 서비스 */
+
+.text-xl{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.accent-color{
+    color: darkorange;
+}
+
+.event-button-wrapper{
+    background-color: brown;
+    color: bisque;
+}
+
+.margin-top-default{
+    margin-top: 20px;
+}
+
+.event-button{
+    width: 19px;
+    border: 0;
+    padding: 20px 0 0 0;
+    background: none;
+    background: maroon url("./images/back_forward.png") no-repeat;
+
+}
+
+.event-button-next{
+    background-position: -36px 0;
+}
+
+.event-thumbnail, .event-brief{
+    margin: 10px 0;
+}
+
+.event-thumbnail img{
+    border: 1px solid #aaa;
+    box-shadow: 5px 5px 5px black;
+}
+
+.favorite{
+}
+
+/* !인기 사이트 */
 
 /* 메인 */
 .slogan{
