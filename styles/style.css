@@ -1268,7 +1268,12 @@ body {
 .favorite-list li{
     margin-top: 10px;
     counter-increment: number;
-    position: relative;
+    /* position: relative; */
+
+    /* display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between; */
 }
 
 .favorite-list li::before{
@@ -1329,31 +1334,38 @@ body {
     border-radius: 3px;
 } */
 
+.favorite-list a{
+    /* background-color: red; */
+    /* flex-grow: 1; */
+}
+
 .up, .stop, .down{
     width: 20px;
     height: 11px;
     display: inline-block;
     /* background-color: violet; */
     margin: 2px 0;
-    position: absolute;
-    top: 2px;
-    right: 0;
+    /* position: absolute; */
+    /* top: 2px; */
+    /* right: 0; */
+    background-image: url("./images/rank.png");
+    background-repeat: no-repeat;
+
+    /* margin-left: auto; */
+    /* *플렉스와 마진을 조합해서 사용하면 더 많은 레이아웃 가능성이 생긴다! */
 }
 
 .up{
-    background-image: url("./images/rank.png");
-    background-repeat: no-repeat;
-    background-position: top;
+    /* background-position: top; */
+    background-position: 100% 0;
 }
 .stop{
-    background-image: url("./images/rank.png");
-    background-repeat: no-repeat;
-    background-position: center;
+    /* background-position: center; */
+    background-position: 100% 48%;
 }
 .down{
-    background-image: url("./images/rank.png");
-    background-repeat: no-repeat;
-    background-position: bottom;
+    /* background-position: bottom; */
+    background-position: 100% 100%;
 }
 
 .favorite-more{
