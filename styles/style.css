@@ -1268,7 +1268,8 @@ body {
 .favorite-list li{
     margin-top: 10px;
     counter-increment: number;
-    /* position: relative; */
+
+    position: relative;
 
     /* display: flex;
     flex-flow: row nowrap;
@@ -1340,14 +1341,23 @@ body {
 }
 
 .up, .stop, .down{
+    /* background-color: violet; */
     width: 20px;
     height: 11px;
-    display: inline-block;
-    /* background-color: violet; */
+
+    /* display: inline-block; */
     margin: 2px 0;
-    /* position: absolute; */
-    /* top: 2px; */
-    /* right: 0; */
+
+    /* float: right;
+    margin-top: 3px;
+    margin-top: auto; */
+    /* float 를 이용한 배치 - 가능하나, 사이즈에 대한 유연성이 떨어짐 */
+
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -6px;
+
     background-image: url("./images/rank.png");
     background-repeat: no-repeat;
 
